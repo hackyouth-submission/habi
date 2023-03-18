@@ -1,7 +1,16 @@
 :root {
     --background-color: #282854;
     --primary-color: #E28413;
+    --primary-color-light: #E3B071;
     --secondary-color: white;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    touch-action: none;
 }
 
 body {
