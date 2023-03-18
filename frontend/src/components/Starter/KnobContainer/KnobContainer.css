@@ -1,0 +1,37 @@
+.KnobContainer {
+    width: 90vw;
+    height: 90vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.KnobContainer .number {
+    --rotation: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 2rem;
+    color: white;
+}
+
+#cycle-num {
+    position: absolute;
+    font-size: 4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: var(--background-color);
+
+}
+.KnobContainer .number5  { --rotation: 45deg;  }
+.KnobContainer .number10 { --rotation: 90deg;    }
+.KnobContainer .number15 { --rotation: 135deg;  }
+.KnobContainer .number20 { --rotation: 180deg;    }
+.KnobContainer .number30 { --rotation: 225deg; }
+.KnobContainer .number40 { --rotation: 270deg;   }
+.KnobContainer .number50 { --rotation: 315deg; }
