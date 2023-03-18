@@ -1,0 +1,14 @@
+{
+    "0" : {
+        "subject" : "cs",
+        "difficulty" : 2,
+        "level" : 3,
+        "time" : 5,
+
+        "statement" : "C++ dung lenh gi de in",
+        "audio" : "",
+        "image" : "",
+
+        "answer" : "cout"
+    }
+}
