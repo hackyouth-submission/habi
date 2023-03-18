@@ -25,6 +25,7 @@ export default function KnobContainer() {
         <div className="number number40">40</div>
         <div className="number number50">50</div>
         <Knob timeTrack={(min) => setTime(min)} onRelease={onRelease} />
+        <div className="preview-time">{`${Math.floor(time / 60)}h${(time % 60 < 10 ? "0" : "") + time % 60}m`}</div>
       </div>
     );
 }
