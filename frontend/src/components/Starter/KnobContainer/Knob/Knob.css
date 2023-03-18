@@ -1,0 +1,22 @@
+.Knob {
+    background-color: var(--primary-color-light);
+    border-radius: 50%;
+    position: absolute;
+    width: 70vw;
+    height: 70vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+}
+
+.dot {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    top: 2vw;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
