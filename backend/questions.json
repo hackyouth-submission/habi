@@ -2,13 +2,97 @@
     "0" : {
         "subject" : "cs",
         "difficulty" : 2,
-        "level" : 3,
+        "level" : 2,
         "time" : 5,
 
-        "statement" : "C++ dung lenh gi de in",
+        "statement" : "Nhập trong C++ là cout hay cin?",
         "audio" : "",
         "image" : "",
 
-        "answer" : "cout"
+        "answer" : "cin"
+    },
+    "1" : {
+        "subject" : "cs",
+        "difficulty" : 4,
+        "level" : 4,
+        "time" : 10,
+
+        "statement" : "Đổi số 155 trong hệ thập phân sang hệ nhị phân",
+        "audio" : "",
+        "image" : "",
+
+        "answer" : "10011011"
+    },
+    "2" : {
+        "subject" : "cs",
+        "difficulty" : 6,
+        "level" : 6,
+        "time" : 15,
+
+        "statement" : "Độ phức tạp của thuật toán bubble sort là O(N^x), x là bao nhiêu?",
+        "audio" : "",
+        "image" : "",
+
+        "answer" : "2"
+    },
+    "3" : {
+        "subject" : "cs",
+        "difficulty" : 8,
+        "level" : 8,
+        "time" : 20,
+
+        "statement" : "Lệnh in trong C là printf hay scanf?",
+        "audio" : "",
+        "image" : "",
+
+        "answer" : "printf"
+    },
+    "4" : {
+        "subject" : "en",
+        "difficulty" : 2,
+        "level" : 2,
+        "time" : 5,
+
+        "statement" : "What is this?",
+        "audio" : "",
+        "image" : "/backend/img/triangle.png",
+
+        "answer" : "triangle"
+    },
+    "5" : {
+        "subject" : "en",
+        "difficulty" : 4,
+        "level" : 4,
+        "time" : 10,
+
+        "statement" : "She has short ___ (curl) hair.",
+        "audio" : "",
+        "image" : "",
+
+        "answer" : "curly"
+    },
+    "6" : {
+        "subject" : "en",
+        "difficulty" : 6,
+        "level" : 6,
+        "time" : 15,
+
+        "statement" : "She's beautiful with a ___ (love) smile.",
+        "audio" : "",
+        "image" : "",
+
+        "answer" : "lovely"
+    },
+    "7" : {
+        "subject" : "en",
+        "difficulty" : 6,
+        "level" : 6,
+        "time" : 15,
+
+        "statement" : "___ (luck), the barber cut my hair too short.",
+        "audio" : "",
+        "image" : "",
+
+        "answer" : "luckily"
     }
 }

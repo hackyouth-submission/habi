@@ -1,0 +1,38 @@
+.Toggle {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60vw);
+    justify-content: center;
+    align-items: center;
+}
+
+.Toggle p {
+    text-align: center;
+    width: 6rem;
+    padding: auto;
+    color: var(--secondary-color)
+}
+
+.toggle-button {
+    background-color: var(--primary-color);
+    width: 50px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    padding: 4px;
+    justify-content: left;
+}
+
+.toggle-button.active {
+    justify-content: right;
+}
+
+.toggle-button .pad {
+    transition: 1s;
+    width: 22px;
+    height: 22px;
+    background-color: var(--primary-color-light);
+    border-radius: 15px;
+}

@@ -9,9 +9,15 @@ function Section() {
 
     useEffect(() => {
         //fetch(`/api/getQuestion?time=${state.time}&en=${state.en}&cs=${state.cs}&`)
-        fetch("http://localhost:5000/api/getQuestion?" + new URLSearchParams(state))
-        .then(response => response.json())
-        .then(data => console.log(data));
+        if (state.review) {
+            fetch("http://localhost:5000/api/getQuestion?" + new URLSearchParams(state))
+            .then(response => response.json())
+            .then(data => console.log(data));
+        } else {
+            fetch("http://localhost:5000/api/getKnowledge?" + new URLSearchParams(state))
+            .then(response => response.json())
+            .then(data => console.log(data));
+        }
     }, [])
 
     return (

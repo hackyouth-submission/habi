@@ -14,13 +14,13 @@ app.config['SQLALCHEMY_DATABASE_URI'] =\
         'sqlite:///' + os.path.join(basedir, 'database.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-with open("questions.json", "r") as f:
+with open("questions.json", "r", encoding="utf-8") as f:
     questions = json.loads(f.read())
 
-with open("knowledges.json", "r") as f:
+with open("knowledges.json", "r", encoding="utf-8") as f:
     knowledges = json.loads(f.read())
 
-with open("user_info.json", "r") as f:
+with open("user_info.json", "r", encoding="utf-8") as f:
     user_info = json.loads(f.read())
 
 @app.route('/')
