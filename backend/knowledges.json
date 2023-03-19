@@ -5,9 +5,11 @@
         "level" : 2,
         "time" : 5,
 
-        "content" : "Thông tin là tất cả những gì mang lại cho chúng ta hiểu biết, thông tin gắn với quá trình nhận thức. Thông tin khi đưa vào máy tính, chúng đều được biến đổi thành dạng chung là dãy bit.",
+        "statement" : "Nhập trong C++ là cout hay cin?",
         "audio" : "",
-        "image" : ""
+        "image" : "",
+
+        "answer" : "cin"
     },
     "1" : {
         "subject" : "cs",
@@ -15,9 +17,11 @@
         "level" : 4,
         "time" : 10,
 
-        "content" : "Trong tin học, dữ liệu là thông tin được đưa vào máy tính để máy tính có thể nhận biết và xử lí được. Trong máy tính, xử lí thông tin chính là xử lí dữ liệu. Quá trình xử lí thông tin gồm ba bước: tiếp nhận dữ liệu, xử lí dữ liệu, đưa ra kết quả.",
+        "statement" : "Đổi số 155 trong hệ thập phân sang hệ nhị phân",
         "audio" : "",
-        "image" : ""
+        "image" : "",
+
+        "answer" : "10011011"
     },
     "2" : {
         "subject" : "cs",
@@ -25,9 +29,11 @@
         "level" : 6,
         "time" : 15,
 
-        "content" : "Thông tin có tính toàn vẹn. Dữ liệu không đầy đủ có thể làm thông tin sai lệch, thậm chí không xác định được. Đơn vị đo lượng thông tin cơ bản là bit. Ngoài ra còn có các đơn vị đo thông tin khác như: B, KB, MB, GB, TB, PB. Muốn máy tính hiểu được những thông tin đưa vào máy con người cần phải mã hóa thông tin dưới dạng các câu lệnh của ngôn ngữ máy làm cho thông tin phù hợp với dữ liệu trong máy và thay đổi lượng thông tin đó.",
+        "statement" : "Độ phức tạp của thuật toán bubble sort là O(N^x), x là bao nhiêu?",
         "audio" : "",
-        "image" : ""
+        "image" : "",
+
+        "answer" : "2"
     },
     "3" : {
         "subject" : "cs",
@@ -35,28 +41,46 @@
         "level" : 8,
         "time" : 20,
 
-        "content" : "Mã hoá thông tin là quá trình đưa thông tin vào máy tính để lưu trữ, xử lí được thông tin, thông tin phải biến đổi thành dãy bit. Tất cả các thông tin từ bên ngoài đưa vào trong máy tính đều được gọi là dữ liệu. Hệ nhị phân được chọn bởi vì nó khá dễ dàng khi phân biệt sự hiện diện hay vắng mặt của 1 tín hiệu điện tại 1 thời điểm nào đó. Điều này càng trở nên đáng giá khi máy tính phải xử lý hàng tỷ tỷ các tín hiệu này mỗi giây. Để máy tính có thể xử lí được thông tin thì cần phải có một quá trình, đó là mã hóa thông tin thành dữ liệu, mà dữ liệu này phải là loại dữ liệu máy tính có thể xử lí được.",
+        "statement" : "Lệnh in trong C là printf hay scanf?",
         "audio" : "",
-        "image" : ""
+        "image" : "",
+
+        "answer" : "printf"
     },
     "4" : {
-        "subject" : "en",
-        "difficulty" : 2,
-        "level" : 2,
-        "time" : 5,
-
-        "content" : "Who: đại từ chỉ người, thường đóng vai trò làm chủ ngữ hoặc tân ngữ cho câu. Whom: đại từ chỉ người, được dùng để thay thế vị trí tân ngữ.",
-        "audio" : "",
-        "image" : ""
-    },
-    "5" : {
         "subject" : "en",
         "difficulty" : 4,
         "level" : 4,
         "time" : 10,
 
-        "content" : "Which: đại từ chỉ vật, được dùng để thay thế cả vị trí chủ ngữ và tân ngữ. Whose: đại từ sở hữu, thường được dùng để thay thế đại từ sở hữu. That: Dùng để thay thế cho cả người và vật. Có thể sử dụng thay thế tất cả các đại từ quan hệ trước đó.",
+        "statement" : "She has short ___ (curl) hair.",
         "audio" : "",
-        "image" : ""
+        "image" : "",
+
+        "answer" : "curly"
+    },
+    "5" : {
+        "subject" : "en",
+        "difficulty" : 6,
+        "level" : 6,
+        "time" : 15,
+
+        "statement" : "She's beautiful with a ___ (love) smile.",
+        "audio" : "",
+        "image" : "",
+
+        "answer" : "lovely"
+    },
+    "6" : {
+        "subject" : "en",
+        "difficulty" : 6,
+        "level" : 6,
+        "time" : 15,
+
+        "statement" : "___ (luck), the barber cut my hair too short.",
+        "audio" : "",
+        "image" : "",
+
+        "answer" : "luckily"
     }
 }

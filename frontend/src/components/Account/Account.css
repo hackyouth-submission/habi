@@ -1,4 +1,4 @@
-#avatar {
+#avatar {color: white;
     display: block;
     border-radius: 50%;
     width: 120px;
@@ -7,19 +7,23 @@
     margin-right: 10px;
 }
 
-#graph {
+#graph {color: white;
     display: block;
     width: 320px;
     margin-left: 10px;
 }
 
-#chart {
+#chart {color: white;
     display: block;
     width: 320px;
     margin-left: 10px;
 }
 
 .profile {
+    color: white;
     display: flex;
 }
 
+.white {
+    color: white;
+}
