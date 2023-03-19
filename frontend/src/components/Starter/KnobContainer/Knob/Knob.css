@@ -12,10 +12,10 @@
 
 .dot {
     background-color: var(--primary-color-light);
-    border-radius: 50%;
+    border-radius: 2.5vw;
     position: absolute;
     width: 5vw;
-    height: 5vw;
+    height: 25vw;
     top: 2vw;
     left: 50%;
     transform: translate(-50%, 0);

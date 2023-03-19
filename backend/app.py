@@ -9,17 +9,19 @@ from sqlalchemy.sql import func
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 app = Flask(__name__)
+CORS(app)
 app.config['SQLALCHEMY_DATABASE_URI'] =\
         'sqlite:///' + os.path.join(basedir, 'database.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-with open("questions.json", "r") as f:
+with open("questions.json", "r", encoding="utf-8") as f:
     questions = json.loads(f.read())
 
-with open("knowledges.json", "r") as f:
+with open("knowledges.json", "r", encoding="utf-8") as f:
     knowledges = json.loads(f.read())
+    print(knowledges)
 
-with open("user_info.json", "r") as f:
+with open("user_info.json", "r", encoding="utf-8") as f:
     user_info = json.loads(f.read())
 
 @app.route('/')
@@ -67,30 +69,8 @@ def getQuestion():
 
 @app.route('/api/getKnowledge')
 def getKnowledge():
-    time = int(request.args.get('time'))
-    en = int(request.args.get('en'))
-    cs = int(request.args.get('cs'))
-    listen = int(request.args.get('listen'))
-    note = int(request.args.get('note'))
-    result = list()
-    for i in knowledges:
-        knowl = knowledges[i]
-        if time < knowl["time"]:
-            break
-        if (not en) and (knowl["subject"] == "en"):
-            break
-        if (not cs) and (knowl["subject"] == "cs"):
-            break
-        if (not listen) and (knowl["audio"] != ""):
-            break
-        if (not note) and (knowl["difficulty"] > 5):
-            break
-        if (knowl["subject"] == "en") and (knowl["level"] < user_info["en_level"]):
-            break
-        if (knowl["subject"] == "cs") and (knowl["level"] < user_info["cs_level"]):
-            break
-        result.append(knowl)
-    return json.dumps(random.choice(result))
+    print(knowledges)
+    return make_response(json.dumps(knowledges[0]), 200)
 
 @app.route("/addPoint", methods=["POST"], strict_slashes=False)
 def addPoint():
@@ -104,4 +84,3 @@ def addPoint():
 
 if __name__ ==  "__main__":
     app.run(host='0.0.0.0', port=80, debug=True)
-    CORS(app)

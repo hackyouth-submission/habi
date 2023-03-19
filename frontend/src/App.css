@@ -1,5 +1,9 @@
 .App {
   height: 100vh;
-  font-family: 'Helvetica Neue';
 }
 
+.intro {
+  position: absolute;
+  width: 100wh;
+  z-index: 1;
+}

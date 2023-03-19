@@ -49,18 +49,6 @@
     },
     "4" : {
         "subject" : "en",
-        "difficulty" : 2,
-        "level" : 2,
-        "time" : 5,
-
-        "statement" : "What is this?",
-        "audio" : "",
-        "image" : "/backend/img/triangle.png",
-
-        "answer" : "triangle"
-    },
-    "5" : {
-        "subject" : "en",
         "difficulty" : 4,
         "level" : 4,
         "time" : 10,
@@ -71,7 +59,7 @@
 
         "answer" : "curly"
     },
-    "6" : {
+    "5" : {
         "subject" : "en",
         "difficulty" : 6,
         "level" : 6,
@@ -83,7 +71,7 @@
 
         "answer" : "lovely"
     },
-    "7" : {
+    "6" : {
         "subject" : "en",
         "difficulty" : 6,
         "level" : 6,
