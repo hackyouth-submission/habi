@@ -9,8 +9,9 @@ function Section() {
 
     useEffect(() => {
         //fetch(`/api/getQuestion?time=${state.time}&en=${state.en}&cs=${state.cs}&`)
-        fetch('/api/getQuestion?' + new URLSearchParams(state))
-        .then(response => console.log(response));
+        fetch(
+          "/api/getQuestion?" + new URLSearchParams(state)
+        ).then((response) => console.log(response));
     }, [])
 
     return (
