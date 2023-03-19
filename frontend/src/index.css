@@ -1,8 +1,8 @@
 :root {
-    --background-color: white;
+    --background-color: #282854;
     --primary-color: #E28413;
     --primary-color-light: #E3B071;
-    --secondary-color: #282854;
+    --secondary-color: white;
 }
 
 *, *::before, *::after {
@@ -12,6 +12,7 @@
 html {
     touch-action: none;
     font-family: Gotham Rounded, sans-serif;
+    background-color: var(--background-color);
 }
 
 body {

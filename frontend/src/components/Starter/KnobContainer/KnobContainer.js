@@ -55,11 +55,15 @@ export default function KnobContainer() {
           <div className="preview-time">{convertTime(time)}</div>
         </div>
         <PopupWindow trigger={openPopup}>
-          <button className={"listen" + (ableListen ? " active" : "")} onClick={() => setAbleListen(prev => !prev)}>Listen</button>
-          <button className={"speak" + (ableSpeak ? " active" : "")} onClick={() => setAbleSpeak(prev => !prev)}>Speak</button>
-          <button className={"note" + (ableNote ? " active" : "")} onClick={() => setAbleNote(prev => !prev)}>Note</button>
-          <button className="start" onClick={startSection}>Start</button>
-          <button className="close" onClick={() => {setOpenPopup(false); setTime(0)}}>Close</button>
+          <div className="popup-content">
+            <div className={"button listen" + (ableListen ? " active" : "")} onClick={() => setAbleListen(prev => !prev)}>Listen</div>
+            <div className={"button speak" + (ableSpeak ? " active" : "")} onClick={() => setAbleSpeak(prev => !prev)}>Speak</div>
+            <div className={"button note" + (ableNote ? " active" : "")} onClick={() => setAbleNote(prev => !prev)}>Note</div>
+          </div>
+          <div className="popup-dialog">
+            <div className="button close" onClick={() => {setOpenPopup(false); setTime(0)}}>Close</div>
+            <div className="button start" onClick={startSection}>Start</div>
+          </div>
         </PopupWindow>
       </>
     );

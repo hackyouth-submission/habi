@@ -46,7 +46,51 @@
     z-index: 1;
 }
 
-button.active {
+.popup-content {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-around;
+}
+
+.popup-content .button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.popup-content .button.active {
     background-color: var(--secondary-color);
     color: var(--background-color)
+}
+
+.popup-dialog {
+    position: absolute;
+    bottom: 3px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.popup-dialog .button {
+    width: 48%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--background-color);
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+.popup-dialog .close {
+    background-color: var(--secondary-color);
+}
+
+.popup-dialog .start {
+    background-color: var(--primary-color);
 }
