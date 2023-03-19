@@ -9,6 +9,7 @@ from sqlalchemy.sql import func
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 app = Flask(__name__)
+CORS(app)
 app.config['SQLALCHEMY_DATABASE_URI'] =\
         'sqlite:///' + os.path.join(basedir, 'database.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -40,10 +41,30 @@ def to_response(data):
 
 @app.route('/api/getQuestion')
 def getQuestion():
-    resp = Flask.Response("Foo bar baz")
-    resp.headers['Access-Control-Allow-Origin'] = '*'
-    resp.headers['X-Content-Type-Options'] = 'nosniff'
-    return resp
+    time = int(request.args.get('time'))
+    en = int(request.args.get('en'))
+    cs = int(request.args.get('cs'))
+    listen = int(request.args.get('listen'))
+    note = int(request.args.get('note'))
+    result = list()
+    for i in questions:
+        quest = questions[i]
+        if time < quest["time"]:
+            break
+        if (not en) and (quest["subject"] == "en"):
+            break
+        if (not cs) and (quest["subject"] == "cs"):
+            break
+        if (not listen) and (quest["audio"] != ""):
+            break
+        if (not note) and (quest["difficulty"] > 5):
+            break
+        if (quest["subject"] == "en") and (quest["level"] > user_info["en_level"]):
+            break
+        if (quest["subject"] == "cs") and (quest["level"] > user_info["cs_level"]):
+            break
+        result.append(quest)
+    return json.dumps(random.choice(result))
 
 @app.route('/api/getKnowledge')
 def getKnowledge():
@@ -84,4 +105,4 @@ def addPoint():
 
 if __name__ ==  "__main__":
     app.run(host='0.0.0.0', port=80, debug=True)
-    CORS(app)
+    
