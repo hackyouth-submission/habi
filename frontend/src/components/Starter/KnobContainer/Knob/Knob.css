@@ -1,5 +1,5 @@
 .Knob {
-    background-color: var(--primary-color-light);
+    background-color: var(--primary-color);
     border-radius: 50%;
     position: absolute;
     width: 70vw;
@@ -11,7 +11,7 @@
 }
 
 .dot {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-light);
     border-radius: 50%;
     position: absolute;
     width: 5vw;

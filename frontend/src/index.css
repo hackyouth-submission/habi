@@ -12,6 +12,7 @@
 html {
     touch-action: none;
     font-family: Gotham Rounded, sans-serif;
+    background-color: var(--background-color);
 }
 
 body {

@@ -1,0 +1,25 @@
+#avatar {
+    display: block;
+    border-radius: 50%;
+    width: 120px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#graph {
+    display: block;
+    width: 320px;
+    margin-left: 10px;
+}
+
+#chart {
+    display: block;
+    width: 320px;
+    margin-left: 10px;
+}
+
+.profile {
+    display: flex;
+}
+

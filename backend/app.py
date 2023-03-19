@@ -2,6 +2,7 @@ import os, json, random
 from flask import Flask, make_response, request
 from question import Question
 from knowledge import Knowledge
+from flask_cors import CORS
 
 from sqlalchemy.sql import func
 
@@ -12,13 +13,13 @@ app.config['SQLALCHEMY_DATABASE_URI'] =\
         'sqlite:///' + os.path.join(basedir, 'database.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-with open("questions.json") as f:
+with open("questions.json", "r") as f:
     questions = json.loads(f.read())
 
-with open("knowledges.json") as f:
+with open("knowledges.json", "r") as f:
     knowledges = json.loads(f.read())
 
-with open("user_info.json") as f:
+with open("user_info.json", "r") as f:
     user_info = json.loads(f.read())
 
 @app.route('/')
@@ -91,5 +92,16 @@ def getKnowledge():
         result.append(knowl)
     return json.dumps(random.choice(result))
 
+@app.route("/addPoint", methods=["POST"], strict_slashes=False)
+def addPoint():
+    title = request.json['title']
+    body = request.json['body']
+    user_info["total_answer"] += 1
+    if (body["point"] == 1):
+        user_info["true_answer"] += 1
+    with open("user_info.json", "w") as f:
+        f.write(json.dumps(user_info.json))
+
 if __name__ ==  "__main__":
     app.run(host='0.0.0.0', port=80, debug=True)
+    CORS(app)

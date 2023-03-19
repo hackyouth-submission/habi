@@ -1,0 +1,5 @@
+.close-section {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 2rem;
+}

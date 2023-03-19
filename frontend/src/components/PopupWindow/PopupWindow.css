@@ -1,0 +1,18 @@
+.PopupWindow .popup-background {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.PopupWindow .window {
+    position: absolute;
+    width: 80vw;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    background-color: var(--background-color);
+}

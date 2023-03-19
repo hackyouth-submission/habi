@@ -15,7 +15,7 @@
     text-align: center;
     transform: rotate(var(--rotation));
     font-size: 2rem;
-    color: white;
+    color: var(--secondary-color);
 }
 
 #cycle-num {
@@ -29,9 +29,68 @@
 
 }
 .KnobContainer .number5  { --rotation: 45deg;  }
-.KnobContainer .number10 { --rotation: 90deg;    }
-.KnobContainer .number15 { --rotation: 135deg;  }
-.KnobContainer .number20 { --rotation: 180deg;    }
+.KnobContainer .number10 { --rotation: 90deg;  }
+.KnobContainer .number15 { --rotation: 135deg; }
+.KnobContainer .number20 { --rotation: 180deg; }
 .KnobContainer .number30 { --rotation: 225deg; }
-.KnobContainer .number40 { --rotation: 270deg;   }
+.KnobContainer .number40 { --rotation: 270deg; }
 .KnobContainer .number50 { --rotation: 315deg; }
+
+.KnobContainer .preview-time {
+    position: absolute;
+    bottom: -5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 3rem;
+    color: var(--secondary-color);
+    z-index: 1;
+}
+
+.popup-content {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-around;
+}
+
+.popup-content .button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.popup-content .button.active {
+    background-color: var(--secondary-color);
+    color: var(--background-color)
+}
+
+.popup-dialog {
+    position: absolute;
+    bottom: 3px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.popup-dialog .button {
+    width: 48%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--background-color);
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+.popup-dialog .close {
+    background-color: var(--secondary-color);
+}
+
+.popup-dialog .start {
+    background-color: var(--primary-color);
+}
