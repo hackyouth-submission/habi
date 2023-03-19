@@ -46,7 +46,7 @@ export default function Knob(props) {
             props.onRelease(getTime(rotationAngle));
             rotationAngle = 0;
             knob.style.transform = `translate(-50%, -50%) rotate(${rotationAngle}deg)`;
-            props.timeTrack(getTime(rotationAngle));
+            // props.timeTrack(getTime(rotationAngle));
         };
         knob.addEventListener("pointerup", pointerup);
         

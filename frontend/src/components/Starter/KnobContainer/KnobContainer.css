@@ -15,7 +15,7 @@
     text-align: center;
     transform: rotate(var(--rotation));
     font-size: 2rem;
-    color: white;
+    color: var(--secondary-color);
 }
 
 #cycle-num {
@@ -44,4 +44,9 @@
     font-size: 3rem;
     color: var(--secondary-color);
     z-index: 1;
+}
+
+button.active {
+    background-color: var(--secondary-color);
+    color: var(--background-color)
 }

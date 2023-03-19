@@ -1,8 +1,8 @@
 :root {
-    --background-color: #282854;
+    --background-color: white;
     --primary-color: #E28413;
     --primary-color-light: #E3B071;
-    --secondary-color: white;
+    --secondary-color: #282854;
 }
 
 *, *::before, *::after {

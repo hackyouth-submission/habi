@@ -2,6 +2,7 @@ import os, json, random
 from flask import Flask, make_response, request
 from question import Question
 from knowledge import Knowledge
+from flask_cors import CORS
 
 from sqlalchemy.sql import func
 
@@ -103,3 +104,4 @@ def addPoint():
 
 if __name__ ==  "__main__":
     app.run(host='0.0.0.0', port=80, debug=True)
+    CORS(app)
